@@ -1,3 +1,226 @@
-Hello! My name is Steve Tobias and I am a Computer Science major at Florida Atlantic University in Boca Raton, Florida. 
-In this GitHub, you will see projects that I have worked on in past school projects, or personal projects that I have done on my free time.
-The languages I code in are C, C++, HTML, CSS, BootStrap, JavaScript. I am currently learning Python.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Your Website</title>
+  <style>
+    body {
+      padding-top: 56px;
+      margin-bottom: 60px; 
+      background-color: #12343b;
+      color: white;
+    }
+
+    .h1 {
+      font-family: "Yellowtail", cursive;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url(hero.jpg) center center/cover no-repeat; 
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff; 
+    }
+
+    .mission-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 200px;
+    
+    }
+
+    .mission-heading {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .skills-section {
+      padding-top: 200px;
+      text-align: center;
+    }
+
+    .skills-heading{
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .skills-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .headshot {
+      width: 150px; 
+      height: 150px;
+      border: 5px solid #fff; 
+      border-radius: 50%;
+      margin-top: 20px; 
+    }
+
+    @media (max-width: 768px) {
+      .headshot {
+        width: 100px; 
+        height: 100px; 
+        margin-top: 10px; 
+      }
+    }
+
+    .navbar-brand img {
+      width: 30px; 
+      height: 30px; 
+    }
+
+    .contact-section {
+      padding-top: 200px;
+      text-align: center;
+    }
+
+  .contact-heading {
+      margin-top: 30px;
+      margin-bottom: 20px;
+  
+  }
+    
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      display: none; /* Initially hide the footer */
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <!-- Use an image or icon for the Navbar’s “Brand” -->
+      <i class="bi bi-house-door"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#mission">Mission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <img src="headshot.jpg" alt="Your Headshot" class="headshot">
+    <h1> Steve Tobias </h1>
+    <p> Software Engineer </p>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center mb-4 mission-heading">
+        <h2> My Mission </h2>
+      </div>  
+      <div class="col-lg-6 mission-section">
+        <img src="mission.jpg" alt="Computer Science" class="img-fluid" style="max-width: 100%;">
+      </div>  
+      <div class="col-lg-6 mission-section">
+        <center>
+          <p> My mission is to help companies achieve their goals by providing innovative solutions that exceed expectations. </p>
+          <p> I am a highly motivated and dedicated individual with a passion for software development and a strong work ethic.</p>
+          <p> I am always eager to learn and stay up-to-date with the latest trends and technologies in the industry. </p>
+        </center>
+      </div> 
+    </div>  
+  </div>  
+
+  <!-- Skills Section -->
+  <div class="container skills-section text-center">
+    <div class="row">
+      <div class="col-lg-12 text-center mb-4 skills-heading">
+        <h2> Skills </h2>
+      </div>  
+      <div class="col-md-3">
+        <img src="html-logo.png" alt="HTML Logo" class="skills-image">
+        <p>Structuring the web's content using modern semantic HTML. </p>
+      </div>
+      <div class="col-md-3">
+        <img src="css-logo.png" alt="CSS Logo" class="skills-image">
+        <p>Presenting beautiful web designs and interactions using modern CSS. .</p>
+      </div>
+      <div class="col-md-3">
+        <img src="js-logo.png" alt="JavaScript Logo" class="skills-image">
+        <p>Rapidly developing responsive websites using the web's most popular Framework. </p>
+      </div>
+      <div class="col-md-3">
+        <img src="bootstrap.png" alt="Bootstrap Logo" class="skills-image">
+        <p>Making interactive experiences, games. web apps, and more using JavaScript. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Me Section -->
+  <div class="container contact-section text-center" id="contact">
+    <div class="col-lg-12 text-center mb-4 contact-heading">
+      <h2> Contact Me </h2>
+    </div>  
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <a href="https://www.linkedin.com/in/steve-tobias-b74054156/" target="_blank">
+          <img src="linked.png" alt="LinkedIn Logo" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://github.com/stevetobias14/Steve-Tobias-Coding-Projects" target="_blank">
+          <img src="github.png" alt="GitHub Logo" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="mailto:stevetobias14@gmail.com" target="_blank">
+          <img src="email.png" alt="Image of envelope" class="img-fluid">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" id="myFooter">
+    &copy; 2024 Steve Tobias
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    window.onscroll = function() {
+      var d = document.documentElement;
+      var offset = d.scrollTop + window.innerHeight;
+      var height = d.offsetHeight;
+
+      if (offset === height) {
+        document.getElementById("myFooter").style.display = "block";
+      } else {
+        document.getElementById("myFooter").style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
